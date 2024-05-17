@@ -1,0 +1,26 @@
+openapi: 3.0.2
+info:
+  title: Demo
+  version: "1"
+paths:
+  /demo:
+    post:
+      requestBody:
+        content:
+          application/text:
+            schema:
+              type: string
+      responses:
+        '200':
+          description: demo
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: byte
+        '500':
+          description: demo
+          content:
+            application/text:
+              schema:
+                type: string
